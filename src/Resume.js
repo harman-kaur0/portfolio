@@ -1,9 +1,11 @@
-import {BiDownload} from "react-icons/bi"
+import R from "./Resume.png"
+import PDF from "./Resume.pdf"
+
 const Resume = () => {
     return (
         <div className="resume-container">
                 <div className="resume">
-                    <img src="https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg"/>
+                  <a href={PDF} target="_blank" rel="noopener noreferrer"> <img src={R}/> </a>
                 </div>
         </div>
     )
