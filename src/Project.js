@@ -12,7 +12,7 @@ const divVariant = {
         y: 0,
         transition: {
             delay: 0.4,
-            duration: 2
+            duration: 1
         }
     }
 }
@@ -22,6 +22,7 @@ const Project = ({p}) => {
     const [isHover, setHover] = useState(false)
     return (
         <motion.div 
+            className="project-div"
             initial= "hidden" animate="visible" variants={divVariant}
             onHoverStart={() => setHover(true)} 
             onHoverEnd={() => setHover(false)}
@@ -59,7 +60,8 @@ const Project = ({p}) => {
 
             { 
                 isHover ?
-                <div style={{
+                <div 
+                    style={{
                         position: "absolute", 
                         display: "flex", 
                         justifyContent: "center", 
@@ -68,8 +70,9 @@ const Project = ({p}) => {
                         height: "100%", 
                         top: 0,
                         left: 0,
-                        background: "rgba(258, 279, 553, 0.5)"
-                        }}>
+                        background: "rgba(258, 279, 553, 0.5)",
+                    }}
+                >
                     {p.frontend ? 
                     <a href={p.frontend} target="_blank" rel="noopener noreferrer"><button className="pButton"><span>Frontend</span></button></a>  : null
                     }

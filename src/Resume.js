@@ -7,6 +7,9 @@ const Resume = () => {
                 <div className="resume">
                   <a href={PDF} target="_blank" rel="noopener noreferrer"> <img src={R}/> </a>
                 </div>
+                <div className="resume-overlay">
+                  <h2>Click to Download</h2>
+                </div>
         </div>
     )
 }
