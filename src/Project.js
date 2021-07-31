@@ -22,20 +22,11 @@ const Project = ({p}) => {
     const [isHover, setHover] = useState(false)
     return (
         <motion.div 
-            className="project-div"
+            className= "project-div"
             initial= "hidden" animate="visible" variants={divVariant}
             onHoverStart={() => setHover(true)} 
             onHoverEnd={() => setHover(false)}
             whileHover={{ scale: 1, originX: 0, boxShadow: "0px 0px 8px rgb(255,255,255)"}} 
-            style={{    minWidth: "250px", 
-                        width: "40%", 
-                        height: "40%", 
-                        minHeight: "200px", 
-                        borderRadius: "5px", 
-                        position: "relative",
-                        marginBottom: "10px",
-                        cursor: "pointer"
-                    }}
         >
             <h3 style={{
                         color: "rgb(138, 139, 212)", 

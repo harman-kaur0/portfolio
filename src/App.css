@@ -33,8 +33,8 @@ body {
   display: flex;
   height: calc(100vh - 70px);
   width: 100%;
-  min-width: 300px;
-  min-height: 500px;
+  /* min-width: 300px; */
+  /* min-height: 500px; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -149,35 +149,19 @@ body {
 	filter: blur(50px);
 }
 
-
-.resume-overlay {
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.2);
-  color: #FFFFFF;
-  opacity: 0;
+.resume img:hover {
+  filter: blur(0.9px);
 }
 
-.resume-overlay h2 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.resume:hover .resume-overlay {
-  opacity: 1;
-}
-
-.resume:hover a img {
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-}
-
-
-.resume a img, .resume-overlay {
-  transition: .3s all;
+.project-div {
+  min-width: 250px;
+  width: 40%;
+  height: 40%;
+  min-height: 200px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .about2{
