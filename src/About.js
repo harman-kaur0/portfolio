@@ -5,7 +5,7 @@ import {RiReactjsLine} from "react-icons/ri"
 import {TiHtml5} from "react-icons/ti"
 import {FaDatabase} from "react-icons/fa"
 
-const line = "I am Harman, a full stack developer with a background in pharmacy and biochemistry. Before starting my journey in coding, my passion for helping others drove me towards the pharmacy field. However, my outreach was only limited to my community. I eventually found a new passion in code, which would allow me to make an impact in the lives of others through my applications. I look forward to combining both my passions to seeing how I can transform the healthcare field."
+const line = "I am Harman, a full stack developer with a background in pharmacy and biochemistry. Before starting my journey in coding, my passion for helping others drove me towards the pharmacy field. However, my outreach was only limited to my community. I eventually found a new passion in code, which would allow me to make an impact on a larger scale in the lives of others through my applications. I look forward to combining both my passions to seeing how I can transform the healthcare field."
 
 const sentence = {
     hidden: {opacity: 1},
