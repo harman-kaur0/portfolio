@@ -14,8 +14,8 @@ const variant = (delay) => {
             opacity: 1,
             x: 0,
             transition: {
-                delay: 0.2*delay,
-                duration: 1
+                delay: 0.15*delay,
+                duration: 0.5
             }
         }
     }

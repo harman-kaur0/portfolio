@@ -44,7 +44,7 @@ body {
 
 .resume {
   height: 80%;
-  min-height: 400px;
+  min-height: 300px;
   width: 300px;
   max-width: 300px;
   min-width: 400px;
@@ -59,11 +59,14 @@ body {
   border: 1px solid purple;
 }
 
+.resume a {
+  height: 100%;
+  width: 100%;
+}
+
 .resume img {
   width: 100%;
-  min-width: 300px;
   height: 100%;
-  min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,6 +236,10 @@ body {
   height: 88vh;
   justify-content: center;
   align-items: center;
+}
+
+.home-container::-webkit-scrollbar {
+  width: 0;
 }
 
 .home-left {
