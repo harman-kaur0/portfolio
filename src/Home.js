@@ -17,8 +17,8 @@ const homeVariant  = {
         opacity: 1,
         y: 0,
         transition: {
-            delay: 0.4,
-            duration: 2
+            delay: 0.2,
+            duration: 1
         }
     }
 }
@@ -93,15 +93,15 @@ const Home = () => {
                     style={{ height: "100vh", width: "100vw", zIndex: "999", position: "absolute", top: "0", display: "flex", justifyContent: "center", alignItems: "center"}}
                 >
                     <motion.div className="form-show" initial="hidden" animate="visible" variants={divVariant}>
-                        <div style={{top: "0", marginRight: "auto", display: "flex"}}><button onClick={() => setShow(false)} style={{color: "snow", background: "transparent", border: "none"}}>X</button></div>
+                        <div style={{top: "0", marginRight: "auto", display: "flex"}}><button onClick={() => setShow(false)} style={{color: "black", background: "transparent", border: "none"}}>X</button></div>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}> 
-                            <h3 style={{color: "gold", fontFamily: "Verdana, Geneva, Tahoma, sans-serif", fontWeight: "bold", marginBottom: "20px", marginTop: "10px"}}>Connect With Me</h3>
+                            <h3 style={{color: "black", fontFamily: "Verdana, Geneva, Tahoma, sans-serif", fontWeight: "bold", marginBottom: "20px", marginTop: "10px"}}>Connect With Me</h3>
                             <form onSubmit={sendEmail} style={{display: "flex", flexDirection: "column", alignItems: "center"}} className="input-container" autoComplete="off">
                                 <input name="subject" value={form.subject} onChange={handleChange} className="name formEntry" placeholder="Subject"/>
                                 <input name="name" value={form.name} onChange={handleChange} className="name formEntry" placeholder="Name"/>
                                 <input name="email" value={form.email} onChange={handleChange} className="email formEntry" style={{float: "right"}} placeholder="Email"/>
                                 <textarea name="message" value={form.message} onChange={handleChange} className="message formEntry" placeholder="Message"/>
-                                <Button type="submit" className="navbar-buttons" style={{border: "none", backgroundColor: "black", color: "rgb(138, 139, 212)"}}>SEND</Button>
+                                <Button type="submit" className="navbar-buttons" style={{border: "none", backgroundColor: "black", color: "rgb(221, 236, 200)"}}>SEND</Button>
                             </form>
                         </div>
                     </motion.div>

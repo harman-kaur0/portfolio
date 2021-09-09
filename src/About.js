@@ -12,8 +12,8 @@ const sentence = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 0.005,
-            staggerChildren: 0.02,
+            delay: 0.001,
+            staggerChildren: 0.01,
         }
     }
 }

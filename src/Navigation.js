@@ -118,7 +118,7 @@ const Navigation = ({setShow, show}) => {
                     onClick={handleDiv}
                     style={{ height: "100vh", width: "100vw", zIndex: "999", position: "absolute", top: "0"}}>
                     <motion.div className="nav-div" initial="hidden" animate="visible" variants={divVariant}>
-                        <div style={{top: "0", marginRight: "auto", display: "flex"}}><button onClick={() => setShowNav(false)} style={{color: "snow", background: "transparent", border: "none"}}>X</button></div>
+                        <div style={{top: "0", marginRight: "auto", display: "flex"}}><button onClick={() => setShowNav(false)} style={{color: "rgb(138, 139, 212)", background: "transparent", border: "none"}}>X</button></div>
                         <div style={{display: "flex", flexDirection: "column", alignItems: "center", marginTop: "50%"}}> 
                             <motion.button initial="hidden" animate="visible" variants={variant(0)}  onClick={handleClick} className="buttons">HOME</motion.button>
                             <motion.button initial="hidden" animate="visible" variants={variant(1)}  onClick={handleClick} className="buttons">ABOUT</motion.button>
